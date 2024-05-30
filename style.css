@@ -1,0 +1,165 @@
+/*Nav bar*/
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    height: 100vh;
+    background: radial-gradient(#1C1F2C 30%, #0D0E14);
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.4;
+}
+ul{
+    list-style: none;
+}
+header{
+    width: 100%;
+}
+header img{
+    height: 40px;
+    margin: 0px 0px 10px 0;
+    padding: 20px 16px;
+}
+header nav{
+    height: 72px;
+}
+header ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    padding: 16px 18px;
+}
+header p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 30px 0px;
+    margin: 0 0px;
+    overflow: hidden;
+    position: relative;
+}
+header p::after{
+    content: "";
+    display:block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+header p:hover::after{
+    animation-name: showunderline;
+    animation-duration:300ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-out;
+}
+.icons{
+    height: 15px;
+    width: 15px;
+    padding: px;
+}
+
+.carousel{
+    display: flex;
+    justify-content: center;
+
+}
+
+img .carousel{
+    width: 300%;
+}
+
+.profile{
+    position: fixed;
+    top: 2%;
+    right: 10px;
+    margin: 0;
+    height: 0;
+    transition: height .45 ease-out;
+    z-index:3;
+}
+
+.avatar{
+    height: 48px;
+    width: 48px;
+    padding: 10px;
+}
+
+.profile-selected{
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin: 0 10px 0 20px;
+}
+
+.conteiner-img{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+img .conteiner-img{
+    flex-direction: column;
+    gap: 300px;
+}
+
+.column{
+    gap: 15px;
+}
+
+.silder3{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+.container-sec{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    background: linear-gradient();
+    gap: 5px;
+}
+.item{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.conteiner-reg{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #0f0f0f;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+}
+.dalmatas{
+    flex-direction: row;
+    gap: 1px;
+    width: 300px;
+    height: 150px;
+}
